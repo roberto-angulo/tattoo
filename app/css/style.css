@@ -157,6 +157,7 @@ body {
   --z-index-top: 600;
   --z-index-mostTop: 9999;
   font-family: 'capture_itregular', sans-serif;
+  letter-spacing: 1.87px;
 }
 
 /* Overwrite bootstrap utilties */
@@ -173,6 +174,10 @@ body {
   background: #000 !important;
 }
 
+.border-primary {
+  border-color: var( --primary-color ) !important;
+}
+
 .text-dark {
   color: #000 !important;
 }
@@ -181,7 +186,17 @@ body {
   color: var(--primary-color) !important;
 }
 
+a.text-primary:focus,
+a.text-primary:hover {
+  color: var(--primary-color) !important;
+}
+
 .text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+a.text-secondary:focus,
+a.text-secondary:hover {
   color: var(--secondary-color) !important;
 }
 
@@ -275,9 +290,7 @@ h2 {
 }
 
 .contact-grid {
-
   grid-template-columns: repeat( 3, 1fr );
-
 }
 
 .foo:nth-child(1) {
@@ -358,6 +371,19 @@ h2 {
 
 /* Components */
 
+.c-btn {
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.btn--custom {
+  background-image: url( ../img/button.png ) !important;
+}
+
+.btn--custom-sec {
+  background-image: url( ../img/button-secondary.png ) !important;
+}
+
 /* .columns-carousel-item {
   grid-template-columns: repeat( 4, 1fr ) !important;
 } */
@@ -385,13 +411,46 @@ h2 {
 }
 
 @media (max-width: 1200px) {
+
+  .s-about {
+    grid-column: 4 / 11 !important;
+  }
+
   .form-subscribe {
-    grid-column: 3 / 6;
+    grid-column: 3 / 6 !important;
   }
 
   .subscribe-submit-btn {
     grid-column: 1 / 6;
     border-radius: 11px;
+  }
+
+  .s-footer__contact {
+    grid-column: 2 / 12;
+  }
+
+  .s-footer__projects {
+    grid-column: 2 / 5;
+  }
+
+  .s-footer__links {
+    grid-column: 6 / 8;
+  }
+
+  .contact-input {
+    width: 26rem;
+  }
+
+  .contact-textarea {
+    width: 52.3rem !important;
+  }
+
+  .s-footer__promotion {
+    grid-column: 9 / 12;
+  }
+
+  .s-blog__article {
+    grid-column: 2 / 10 !important;
   }
 }
 
@@ -427,8 +486,12 @@ h2 {
     grid-column: 3 / 12;
   }
 
-  .s-footer__contact {
-    grid-column: 1 / 13;
+  .contact-input {
+    width: 17.5rem;
+  }
+
+  .contact-textarea {
+    width: 35.35rem !important;
   }
 
 }
@@ -448,7 +511,11 @@ h2 {
   }
 
   .contact-input {
-    /* width: 16.5rem; */
+    width: 11rem;
+  }
+
+  .contact-textarea {
+    width: 22.3rem !important;
   }
 }
 
@@ -529,6 +596,6 @@ h2 {
 
 @media (max-width: 480px) {
   .subscribe-input {
-    width: 11.28rem;
+    width: 21rem;
   }
 }
