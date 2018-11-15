@@ -13,8 +13,6 @@
 
   <svg class="sr-only">
     <defs>
-    <!-- <rect x="27.5" y="25.8" fill="none" width="81.5" height="13.7"/>
-    <text transform="matrix(1 0 0 1 36.1646 34.4795)" fill="#240538" font-family="'Captureit'" font-size="12">Read more</text> -->
     <g id="button">
       <path fill="" d="M131.1,44.7c0,0.8-0.1,1.5-0.2,1.2c0.2,1.6,0,1.6,0.3,1.8c0.1,1-0.1,2.1-0.2,1l0.2,3l0-1.8
         c0.2,0.5-0.1,2.8,0.2,3.4l0-3.2l0.1,0.2c-0.1-0.7-0.1-2.2,0-2.6c0,0.1,0.1,0,0.1,0.6c0-3.9-0.4-1-0.5-4.3
@@ -310,25 +308,64 @@
       <path fill="" d="M122.5,52.5c0,0,0.1,0,0.2-0.1C122.5,52.5,122.5,52.5,122.5,52.5z"/>
       <path fill="" d="M122.6,52.5c0.5-0.1,2.1,0,2.7-0.1l-0.1,0l1.1-0.1C125.3,52.3,123.2,52.3,122.6,52.5z"/>
     </g>
-
     </defs>
   </svg>
 
-  <section class="home-section grid-wrp grid-12cols bg-multiply justify-items-center h-100vh align-items-center">
+  <section class="home-section grid-wrp grid-12cols bg-multiply justify-items-center h-100vh position-relative">
+
+    <button type="button" name="button" class="c-btn-collapse d-block d-xl-none cursor-pointer position-relative outline-0-onfocus mt-2 rounded-circle p-3 pb-5 pt-4" id="menu_hamburguer">
+      <span class="c-menu-icon bg-white d-block"></span>
+    </button>
+
+    <ul class="list-unstyled whole-cols-width align-self-start pt-4 z-index200 menu-max1200-hide main-menu-breakpoint w-100 text-right clearfix" id="main_menu">
+
+        <li class="main-menu__item d-block d-xl-inline-block ml-4 text-center float-xl-left mb-2 mb-xl-0">
+          <a href="" class="text-white menu-item p-3 transition">LOGO <span class="d-inline-block arrow-character ml-3 mr-2"></span>
+          </a>
+        </li>
+
+        <li class="main-menu__item main-menu__item--pseudoelement d-block d-xl-inline-block ml-4 text-center mb-2 mb-xl-0 pb-2">
+          <a href="" class="text-white menu-item p-3 transition">Nosotros <span class="d-inline-block arrow-character ml-3 mr-2"></span>
+          </a>
+        </li>
+
+        <li class="main-menu__item d-block main-menu__item--pseudoelement d-xl-inline-block ml-4 text-center mb-2 mb-xl-0 pb-2">
+          <a href="" class="text-white font-uppercase menu-item--purple-hov menu-item--letter-spacing p-3 transition">Servicios <span class="d-inline-block arrow-character ml-3 mr-2"></span>
+          </a>
+        </li>
+
+        <!-- <li class="main-menu__item  d-none d-xl-inline-block ml-4 text-center"> -->
+          <!-- <a href="" class="text-white d-inline-block logo"> -->
+            <!-- LOGO -->
+            <!-- <img src="img/logo.png" class="mw-100" alt=""> -->
+          <!-- </a> -->
+        <!-- </li> -->
+
+        <li class="main-menu__item d-block main-menu__item--pseudoelement d-xl-inline-block ml-4 text-center mb-2 mb-xl-0 pb-2">
+          <a href="" class="text-white font-uppercase menu-item--purple-hov menu-item--letter-spacing p-3 transition rounded">Menu <span class="d-inline-block arrow-character ml-3 mr-2"></span>
+          </a>
+        </li>
+
+        <li class="main-menu__item d-block main-menu__item--pseudoelement d-xl-inline-block ml-4 text-center mb-2 mb-xl-0 pb-2">
+          <a href="#contact_section" id="scroll_contact" class="text-white font-uppercase menu-item--purple-hov menu-item--letter-spacing text-center transition p-3">Contacténos <span class="d-inline-block arrow-character ml-3 mr-2"></span>
+          </a>
+        </li>
+      </ul>
+
     <header class="whole-cols-width">
       <h1 class="text-center text-white">
         Lorem ipsum dolor
       </h1>
 
       <div class="text-center">
-        <p class="btn mb-lg-0 justify-self-center ml-2 btn--custom-sec c-btn p-3">
-          <a href="" class="btn text-secondary">
+        <p class="btn mb-lg-0 justify-self-center ml-2 btn--custom-sec c-btn p-3 transition">
+          <a href="" class="btn text-secondary transition">
             Read more
           </a>
         </p>
 
-        <p class="btn mb-lg-0 justify-self-center ml-2 btn--custom-sec c-btn p-3">
-          <a href="" class="btn text-secondary">
+        <p class="btn mb-lg-0 justify-self-center ml-2 btn--custom-sec c-btn p-3 transition">
+          <a href="" class="btn text-secondary transition">
             Read more
           </a>
         </p>
@@ -347,8 +384,8 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci similique beatae ratione, ipsam dolorum consequuntur consequatur fugiat aperiam a temporibus, incidunt, illum reiciendis quas, saepe voluptas rem. Veritatis, officiis.
           </p>
 
-          <p class="btn mb-5 mb-xl-0 justify-self-center btn--custom c-btn p-3">
-            <a href="" class="btn text-primary">
+          <p class="btn mb-5 mb-xl-0 justify-self-center btn--custom btn--custom-prim c-btn p-3 transition">
+            <a href="" class="btn text-primary transition">
               Read more
             </a>
           </p>
@@ -371,8 +408,8 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore mollitia repellendus minus saepe dolores, nostrum, ut totam accusamus perspiciatis, non illum iure doloribus? Eius incidunt nisi reprehenderit inventore voluptatibus debitis.
       </p>
 
-      <p class="p-3 mb-lg-0 c-btn btn--custom-sec container-skew">
-        <a href="" class="btn text-secondary">
+      <p class="p-3 mb-lg-0 c-btn btn--custom-sec container-skew transition w-75">
+        <a href="" class="btn text-secondary transition">
           Read more
         </a>
       </p>
@@ -385,8 +422,8 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore mollitia repellendus minus saepe dolores, nostrum, ut totam accusamus perspiciatis, non illum iure doloribus? Eius incidunt nisi reprehenderit inventore voluptatibus debitis.
       </p>
 
-      <p class="p-3 mb-lg-0 c-btn btn--custom-sec container-skew">
-        <a href="" class="btn text-secondary">
+      <p class="p-3 mb-lg-0 c-btn btn--custom-sec container-skew transition w-75">
+        <a href="" class="btn text-secondary transition">
           Read more
         </a>
       </p>
@@ -399,8 +436,8 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore mollitia repellendus minus saepe dolores, nostrum, ut totam accusamus perspiciatis, non illum iure doloribus? Eius incidunt nisi reprehenderit inventore voluptatibus debitis.
       </p>
 
-      <p class="p-3 mb-lg-0 c-btn btn--custom-sec container-skew">
-        <a href="" class="btn text-secondary">
+      <p class="p-3 mb-lg-0 c-btn btn--custom-sec container-skew transition w-75">
+        <a href="" class="btn text-secondary transition">
           Read more
         </a>
       </p>
@@ -438,8 +475,8 @@
 
     <div class="w-100 text-center whole-cols-width mt-5">
       <!-- <a href="" class="">See all</a> -->
-      <p class="btn mb-lg-0 p-3 btn--custom c-btn mt-4">
-        <a href="" class="btn text-primary">
+      <p class="btn mb-lg-0 p-3 btn--custom c-btn mt-4 btn--custom-prim transition">
+        <a href="" class="btn text-primary transition">
           Read more
         </a>
       </p>
@@ -518,7 +555,7 @@
 
       <input type="text" class="form-control subscribe-input box-shadow mt-2" class="">
 
-      <input type="submit" value="submit" class="bg-primary subscribe-submit-btn text-white mt-2 p-2 pt-3 outline-0-onfocus">
+      <input type="submit" value="submit" class="bg-primary subscribe-submit-btn text-white mt-2 p-2 pt-3 outline-0-onfocus cursor-pointer">
     </form>
   </section>
 
@@ -553,11 +590,17 @@
         </p>
 
         <p class="text-white">
-          <span class="icon icon-facebook p-2 border border-white rounded-circle"></span>
+          <a href="#" class="text-white">
+            <span class="icon icon-facebook p-2 border border-white rounded-circle"></span>
+          </a>
 
-          <span class="icon icon-twitter p-2 border border-white rounded-circle"></span>
+          <a href="#" class="text-white">
+            <span class="icon icon-twitter p-2 border border-white rounded-circle"></span>
+          </a>
 
-          <span class="icon icon-instagram p-2 border border-white rounded-circle"></span>
+          <a href="#" class="text-white">
+            <span class="icon icon-instagram p-2 border border-white rounded-circle"></span>
+          </a>
         </p>
       </div>
     </div>
@@ -587,7 +630,7 @@
     </div>
 
     <div class="whole-cols-width mt-5">
-      <p class="text-white text-center mb-0">Designed with so much love, <a href="#" class="text-secondary">by Roberto Angulo</a></p>
+      <p class="text-white text-center mb-0">Designed with so much love, <a href="https://facebook.com/anguloroberto9" target="_blank" class="text-secondary">by Roberto Angulo</a></p>
     </div>
   </footer>
 

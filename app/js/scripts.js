@@ -2,13 +2,10 @@ jQuery( document ).ready( function( $ ) {
 
   'use strict';
 
-  // $( '.carousel-testimonies').slick({
-  //
-  //     dots: false,
-  //     arrows: true,
-  //       slidesToShow: 1,
-  //       draggable: false
-  //
-  //   });
+  $( '#menu_hamburguer' ).on( 'click', function() {
+
+      $( this ).next().toggleClass( 'menu-max1200-hide' );
+
+    } );
 
 } );
