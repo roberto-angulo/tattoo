@@ -364,7 +364,7 @@ h2 {
 
 
 .portfolio-item--filter {
-  filter: hue-rotate(570deg) saturate(3) !important;
+  filter: hue-rotate(570deg) saturate(2) !important;
 }
 
 /* Carousels */
