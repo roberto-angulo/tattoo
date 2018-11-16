@@ -138,15 +138,9 @@
   font-family: var( --anton-font );
 }
 
-[data-font="bold"] {
-  font-weight: 700 !important;
-}
-
 .btn {
   background: transparent !important;
 }
-
-
 
 /* Custom styles */
 body {
@@ -353,6 +347,16 @@ h2 {
 .bg-multiply {
   background-color: rgba(0, 0, 0, .6);
   background-blend-mode: multiply;
+}
+
+.s-portfolio--gap {
+  grid-gap: .87rem;
+}
+
+.portfolio-item {
+  /* background-blend-mode: multiply;
+  background-color: rgba( 244, 144, 25, .5 ); */
+  /* filter:  */
 }
 
 /* Carousels */
