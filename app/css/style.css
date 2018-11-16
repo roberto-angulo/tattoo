@@ -221,6 +221,17 @@ h2 {
   background: url(../img/home-img.jpeg);
 }
 
+.home-section::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2rem;
+  width: 100vw;
+  top: 97%;
+  /* margin-top: 35.5rem; */
+  background: url( ../img/s-home-border.png );
+}
+
 .s-about {
   grid-column: 2 / 6;
 }
