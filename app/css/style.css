@@ -354,9 +354,17 @@ h2 {
 }
 
 .portfolio-item {
-  /* background-blend-mode: multiply;
-  background-color: rgba( 244, 144, 25, .5 ); */
-  /* filter:  */
+  filter: hue-rotate(365deg) saturate(1.75);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  transform: translateY(1.6rem);
+}
+
+
+.portfolio-item--filter {
+  filter: hue-rotate(570deg) saturate(3) !important;
 }
 
 /* Carousels */
