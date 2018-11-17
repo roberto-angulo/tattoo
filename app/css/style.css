@@ -221,7 +221,7 @@ h2 {
   background: url(../img/home-img.jpeg);
 }
 
-/* .home-section::after {
+.home-section::after {
   content: "";
   display: block;
   position: absolute;
@@ -229,7 +229,7 @@ h2 {
   width: 100vw;
   top: 97%;
   background: url( ../img/s-home-border.png );
-} */
+}
 
 .s-about {
   grid-column: 2 / 6;
